@@ -2,7 +2,7 @@ const { join, resolve } = require('path')
 const Dotenv = require('dotenv-webpack')
 
 const config = {
-  entry: resolve('src', 'app.tsx'),
+  entry: resolve('src', 'app.ts'),
   devtool: 'inline-source-map',
 
   output: {

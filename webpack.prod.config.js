@@ -3,7 +3,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const Dotenv = require('dotenv-webpack')
 
 const config = {
-  entry: resolve('src', 'library.tsx'),
+  entry: resolve('src', 'library.ts'),
   devtool: false,
 
   output: {
