@@ -1,11 +1,11 @@
 import * as Express from 'express';
-
+import * as faker from 'faker'
 const app = Express();
 
 app.get(
     '/',
     (req: Express.Request, res: Express.Response) => {
-        return res.send('Hello world.');
+        return res.send(faker.name.findName());
     });
 
 app.listen(
